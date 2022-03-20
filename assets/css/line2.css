@@ -1,0 +1,551 @@
+/* -------------------------------------------
+
+Name: 		Standalone
+Version:    1.0
+Author:		Rabiul
+Portfolio:  https://themeforest.net/user/alam_robi
+
+p.s. I am available for Freelance hire (UI design, web development). mail: miller.themes@gmail.com
+
+ ----------------------------------------------*/
+ @import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap');
+ @import url('https://fonts.maateen.me/solaiman-lipi/font.css');
+
+/*
+1. General CSS
+
+font-family: 'Hind Siliguri', sans-serif;
+
+*/
+
+
+
+/* ============================================
+1. General CSS
+=============================================== */
+:root{
+    --main-color:#e98b2c;
+    --dark:#1b1b22;
+    --dark-light:#32323a;
+    --white:#fff;
+    --white-light:#c8c8c8;
+}
+
+
+*{
+      margin: 0;
+      padding: 0;
+      outline: none;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      text-decoration: none;
+      list-style: none;
+  }
+  
+  ::before, ::after{
+      box-sizing: border-box;
+  }
+  /* img{
+      width: 100%;
+  } */
+  
+  body {
+      margin: 0;
+      line-height: 1.5;
+      font-size: 16px;
+      height: auto;
+      font-family: 'SolaimanLipi', Arial, sans-serif !important;
+      background-color:#EFF3F8 ;
+     
+      }
+
+      /* For scripting */
+
+      body.hide-scrolling{
+        overflow-y: hidden;
+      }
+  
+      ul{
+          list-style-type: none;
+      }
+      a{
+          text-decoration: none;
+      }
+
+  table {
+        border-collapse:collapse;
+        border-spacing:0;
+  }
+
+  .section{
+      min-height: 100vh;
+      display: block;  
+      width: 100%;
+  }
+
+  .shadow-dark2{
+
+    -webkit-box-shadow: 0 0 20px rgba(48,46,77,0.15);
+    box-shadow: 0 0 20px rgba(48,46,77,0.15);
+
+  }
+
+  .shadow-dark{
+/* 
+    -webkit-box-shadow: 0 0 20px rgba(48,46,77,0.15);
+    box-shadow: 0 0 20px rgba(48,46,77,0.15); */
+
+    /* -webkit-box-shadow: 0 0 20px rgba(0,0,0,0.15);
+    box-shadow: 0 0 20px rgba(0,0,0,0.15); */
+/* 
+    box-shadow: 2px -4px 8px -3px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 2px -4px 8px -3px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px -4px 8px -3px rgba(0,0,0,0.75); */
+
+    /* box-shadow: -2px -1px 24px -16px rgba(0,0,0,0.72) inset;
+    -webkit-box-shadow: -2px -1px 24px -16px rgba(0,0,0,0.72) inset;
+    -moz-box-shadow: -2px -1px 24px -16px rgba(0,0,0,0.72) inset; */
+    box-shadow: -2px -1px 25px -16px rgba(0,0,0,0.72) inset;
+    -webkit-box-shadow: -2px -1px 25px -16px rgba(0,0,0,0.72) inset;
+    -moz-box-shadow: -2px -1px 25px -16px rgba(0,0,0,0.72) inset;
+
+}
+
+.margin-bottom{
+    margin-bottom: 60px;
+}
+
+
+/* ----------------------- Content Design stat Here ------------------------ */
+
+.allcontent{
+    /* display: flex; */
+    width: 100%;
+    float: left;
+}
+
+.content-body{
+    background-color: #ffffff;
+    /* height: 100vh; */
+    margin-top: 60px;
+}
+.header-area {
+    width: 100%;
+    display: block;
+    float: left;
+    /* padding-bottom: 5px; */
+}
+
+.header-left{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+
+}
+
+.header-right{
+    float: right;
+}
+
+.header-left img {
+    float: left;
+    width: 28px;
+    height: 21px;
+    margin: 7px 9px 0px 20px;
+}
+
+.header-left h4 {
+    font-size: 20px;
+    font-family: 'Hind Siliguri', sans-serif;
+}
+
+.header-left h4 {
+    font-size: 20px;
+    font-family: 'Hind Siliguri', sans-serif;
+    font-weight: 600;
+    margin-bottom: 0px;
+    line-height:40px;
+    color: #44C1EA;
+}
+
+/* --------------------------------------- main-content -------------------------- */
+.main-content{
+    display: block;
+    float: left;
+    width: 100%;
+    /* height: 100vh; */
+    /* overflow: hidden; */
+}
+
+.editor-icon {
+    display: block;
+    float: left;
+    width: 100%;
+}
+.editor-icon {
+    /* display: flex; */
+    /* justify-content: flex-start; */
+    /* flex-wrap: wrap; */
+    /* padding: 15px 0px; */
+    display: block;
+    float: left;
+    width: 100%;
+    padding: 20px 0px 40px 0px;
+    position: relative;
+}
+
+p.specific-icon a img {
+    display: block;
+    float: left;
+    /* width: 20px;
+    height: 20px; */
+}
+
+.editor-icon ul{
+    display: flex;
+    /* justify-content: space-between; */
+    margin-bottom: 0px;
+}
+.editor-icon ul li {
+    padding: 0px 10px;
+    line-height:10px;
+    position: relative;
+}
+
+.editor-icon ul li a img {
+    /* width: 20px;
+    height: 15px; */
+}
+
+.withsidebar-content{
+    background-color: #F9F9F9;
+    float: left;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    /* overflow-x: hidden; */
+    position: relative;
+
+}
+
+.main-text-content{
+    width: 100%;
+    display: block;
+    float: left;
+}
+
+.main-text-content p{
+    padding: 20px;
+    font-size: 16px;
+    font-family: 'SolaimanLipi', Arial, sans-serif !important;
+}
+
+.right-sidebar {
+    position: absolute;
+    top:0;
+    right:-150px;
+    width: 0%;
+    overflow-x: hidden;
+    height: 50vh;
+}
+
+div#ascrail2000 {
+    width: 8px;
+    z-index: auto;
+    cursor: default;
+    position: absolute;
+    top: 179.2px;
+    left: 1324px !important;
+    height: 378px;
+    opacity: 0;
+    display: block;
+}
+
+div#ascrail2000-hr {
+
+    display: none !important;
+
+}
+
+#check:checked  ~ .container .row .withsidebar-content .right-sidebar {
+    right: 0;
+    width: 30%;
+
+}
+#check:checked  ~ .container .row .withsidebar-content .main-text-content{
+    width: 100%;
+
+}
+
+#check:checked  ~ .container .row .headertoptext{
+   display: block;
+
+}
+
+#sidebar_btn2{
+    cursor: pointer;
+}
+
+.headertoptext{
+    display: none;
+}
+
+
+#check{
+    display: none;
+}
+
+
+
+ul.rightsidebarbook li a span.rightarrow img {
+    width: 5px;
+    height: 8px;
+}
+
+ul.rightsidebarbook li a span.drop_arrow img {
+    width: 6px;
+    height: 3px;
+}
+ul.rightsidebarbook li a span.crowsbook img {
+    width: 14px;
+    height: 34px;
+}
+
+.errorcolor img {
+    width: 10px;
+    height: 10px;
+}
+
+ul.rightsidebarbook li {
+    margin-bottom: 3px;
+    padding: 5px 20px;
+}
+
+ul.rightsidebarbook li a span {
+    padding: 0px 5px 0px 45px;
+}
+ul.rightsidebarbook li a {
+    text-decoration: none;
+    font-family: 'Hind Siliguri';
+    font-size: 13px;
+}
+
+.rightsidebarbook  hr {
+    margin-top: 0.10rem;
+    margin-bottom: 0.10rem;
+    border: 0;
+    border-top: 1px solid rgba(0,0,0,.1);
+}
+
+span.setting_icon img {
+    width: 20px;
+    height: 20px;
+}
+
+ul.dropdownmenu {
+    display: block;
+    float: left;
+    width: 100%;
+}
+
+ul.dropdownmenu li {
+    display: inline-block;
+    width: 100%;
+}
+
+p.totalerror {
+    position: absolute;
+    right: 175px;
+    top: 30px;
+    font-size: 25px; 
+    font-family: 'Hind Siliguri', sans-serif;
+    color: #44C1EA;
+}
+
+span.count {
+    border: 1px solid #44C1EA;
+    padding: 5px 20px;
+    font-size: 13px;
+    line-height: 10px;
+    border-radius: 5px;
+    font-weight: 700;
+}
+
+
+/* ======================== Dropd down menu ============================ */
+.parentsetting {
+    /* width:200px; */
+    position: relative;
+
+}
+
+/* .click{
+
+    background-color: #B71C1C;
+
+}
+
+.click:hover {
+
+    background-color: #B71C1C;
+
+} */
+
+.click{
+
+    /* padding: 12px; */
+
+    font-size: 10px;
+
+    font-family:inherit;
+
+    border: none;
+
+    outline: none;
+
+    width:300px;
+
+    color:#556170;
+
+    transition: 0.3s;
+    position: relative;
+
+}
+.check2{
+
+    /* padding: 12px; */
+
+    font-size: 10px;
+
+    font-family:inherit;
+
+    border: none;
+
+    outline: none;
+
+    width:300px;
+
+    color:#556170;
+
+    transition: 0.3s;
+    text-decoration: none;
+    position: relative;
+
+}
+
+.links {
+
+    padding: 12px 0px;
+
+    font-size:13px;
+
+    font-family: 'Hind Siliguri', sans-serif;
+
+    border: none;
+
+    outline: none;
+
+    width:185px;
+
+    color:#fff;
+
+    transition: 0.3s;
+    background-color: #fff;
+
+}
+
+.list {
+
+    position: absolute;
+
+    transform: scaleY(0);
+
+    transform-origin: top;
+
+    transition: 0.3s;
+
+}
+
+.dropdown-item {
+    padding: .25rem .5rem !important;
+}
+
+span.dropleftimg {
+    display: block;
+    float: left;
+}
+span.droprightimg {
+    display: block;
+    float: right;
+    text-align: right;
+}
+
+.newlist {
+
+    transform: scaleY(1);
+    z-index: 999;
+
+}
+
+
+
+.links:hover {
+
+    /* background-color: #01579B; */
+    background-color: #ededed;
+
+    transform: scale(1.1);
+
+}
+
+img.whaticon {
+    margin-right: 25px;
+}
+
+span.borderall {
+    border: 1px solid #ededed;
+    padding: 3px 7px;
+    border-radius: 3px;
+}
+
+span.setting_icon img {
+    position: absolute;
+    top: 20px;
+    left:10px;
+}
+li.borderight {
+    border-right: 2px solid #ddd;
+}
+/* ======================== Dropd down menu ============================ */
+
+
+
+/* --------------------------------------- main-content -------------------------- */
+/* --------------------------------------- footer-content -------------------------- */
+.footer-area{
+    display: block;
+    float: left;
+    width: 100%;
+    padding:20px 10px
+}
+ul.footer-item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    margin-bottom: 0px;
+}
+
+ul.footer-item li {
+    margin: 0px 10px;
+}
+
+p.specific-icon {
+    margin-left: 100px;
+    margin-bottom: 0px;
+}
+
+
+
+/* --------------------------------------- footer-content -------------------------- */
+
+

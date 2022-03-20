@@ -1,0 +1,420 @@
+/* -------------------------------------------
+
+Name: 		Text to speach
+Version:    1.0
+Author:		Rabiul
+Portfolio:  https://themeforest.net/user/alam_robi
+
+p.s. I am available for Freelance hire (UI design, web development). mail: miller.themes@gmail.com
+
+ ----------------------------------------------*/
+@import url("https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.maateen.me/solaiman-lipi/font.css");
+
+/*
+1. General CSS
+
+font-family: 'Hind Siliguri', sans-serif;
+
+*/
+
+/* body {
+  margin: 0;
+  line-height: 1.5;
+  font-size: 16px;
+  height: auto;
+  font-family: "Hind Siliguri", sans-serif;
+  background-color: #eff3f8;
+} */
+
+/* ============================================
+1. General CSS
+=============================================== */
+:root {
+  --main-color: #e98b2c;
+  --dark: #1b1b22;
+  --dark-light: #32323a;
+  --white: #fff;
+  --white-light: #c8c8c8;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+::before,
+::after {
+  box-sizing: border-box;
+}
+/* img{
+      width: 100%;
+  } */
+
+body {
+  margin: 0;
+  line-height: 1.5;
+  font-size: 16px;
+  height: auto;
+  font-family: "Hind Siliguri", sans-serif;
+}
+
+/* For scripting */
+
+body.hide-scrolling {
+  overflow-y: hidden;
+}
+
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.section {
+  min-height: 100vh;
+  display: block;
+  width: 100%;
+}
+
+.shadow-dark2 {
+  -webkit-box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
+  box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
+}
+
+.shadow-dark {
+  /* 
+    -webkit-box-shadow: 0 0 20px rgba(48,46,77,0.15);
+    box-shadow: 0 0 20px rgba(48,46,77,0.15); */
+
+  /* -webkit-box-shadow: 0 0 20px rgba(0,0,0,0.15);
+    box-shadow: 0 0 20px rgba(0,0,0,0.15); */
+  /* 
+    box-shadow: 2px -4px 8px -3px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 2px -4px 8px -3px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px -4px 8px -3px rgba(0,0,0,0.75); */
+
+  /* box-shadow: -2px -1px 24px -16px rgba(0,0,0,0.72) inset;
+    -webkit-box-shadow: -2px -1px 24px -16px rgba(0,0,0,0.72) inset;
+    -moz-box-shadow: -2px -1px 24px -16px rgba(0,0,0,0.72) inset; */
+  box-shadow: -2px -1px 25px -16px rgba(0, 0, 0, 0.72) inset;
+  -webkit-box-shadow: -2px -1px 25px -16px rgba(0, 0, 0, 0.72) inset;
+  -moz-box-shadow: -2px -1px 25px -16px rgba(0, 0, 0, 0.72) inset;
+}
+
+.margin-bottom {
+  margin-bottom: 60px;
+}
+
+.tab-container-one {
+  margin-top: 10%;
+}
+
+/*=============================== Content area design ======================= */
+
+.bodybg {
+  display: flex;
+  height: 100vh;
+  /* background: url("../img/bg.png") no-repeat center; */
+  background: url("../../images/stts/sttbg.png") no-repeat center;
+  background-size: cover;
+  background-position: 100% 65%;
+  flex-wrap: wrap;
+  /* width: 100%; */
+  width: 100vw;
+  float: left;
+  position: relative;
+  /* padding: 137px 0px 0px 0px; */
+  justify-content: center;
+  align-items: center;
+}
+
+/*=============================== Content area design ======================= */
+/*=============================== Custom progress bar style  design ======================= */
+.gotiprogress {
+  display: block;
+  float: left;
+  width: 100%;
+}
+.gotiprogress span.gotilevel {
+  float: left;
+  display: block;
+  width: 100;
+  color: #136ee5;
+  font-size: 25px;
+  font-weight: bold;
+  font-family: "Hind Siliguri", sans-serif;
+}
+.range {
+  position: relative;
+  width: 100%;
+  height: 22px;
+  float: left;
+  display: block;
+}
+.range input {
+  width: 100%;
+  position: absolute;
+  top: 2px;
+  height: 0;
+  -webkit-appearance: none;
+}
+.range input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 18px;
+  height: 18px;
+  margin: -8px 0 0;
+  border-radius: 50%;
+  background: #136ee5;
+  cursor: pointer;
+  border: 0 !important;
+}
+.range input::-moz-range-thumb {
+  width: 18px;
+  height: 18px;
+  margin: -8px 0 0;
+  border-radius: 50%;
+  background: #136ee5;
+  cursor: pointer;
+  border: 0 !important;
+}
+.range input::-ms-thumb {
+  width: 18px;
+  height: 18px;
+  margin: -8px 0 0;
+  border-radius: 50%;
+  background: #136ee5;
+  cursor: pointer;
+  border: 0 !important;
+}
+.range input::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 2px;
+  cursor: pointer;
+  background: #b5c5e3;
+}
+.range input::-moz-range-track {
+  width: 100%;
+  height: 2px;
+  cursor: pointer;
+  background: #b5c5e3;
+}
+.range input::-ms-track {
+  width: 100%;
+  height: 2px;
+  cursor: pointer;
+  background: #b5c5e3;
+}
+.range input:focus {
+  background: none;
+  outline: none;
+}
+.range input::-ms-track {
+  width: 100%;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+.range-labels {
+  margin: 18px -20px 0;
+  padding: 0;
+  list-style: none;
+}
+.range-labels li {
+  position: relative;
+  float: left;
+  width: 73px;
+  text-align: center;
+  color: #b5c5e3;
+  font-size: 14px;
+  cursor: pointer;
+}
+.range-labels li::before {
+  position: absolute;
+  top: -30px;
+  right: 0;
+  left: 0;
+  content: "";
+  margin: 0 auto;
+  width: 1px;
+  height: 10px;
+  background: #b5c5e3;
+  border-radius: 50%;
+}
+.range-labels .active {
+  color: #136ee5;
+}
+.range-labels .selected::before {
+  background: #136ee5;
+}
+.range-labels .active.selected::before {
+  display: none;
+}
+
+.range-labels-pich {
+  margin: 18px -20px 0;
+  padding: 0;
+  list-style: none;
+}
+.range-labels-pich li {
+  position: relative;
+  float: left;
+  width: 73px;
+  text-align: center;
+  color: #b5c5e3;
+  font-size: 14px;
+  cursor: pointer;
+}
+.range-labels-pich li::before {
+  position: absolute;
+  top: -30px;
+  right: 0;
+  left: 0;
+  content: "";
+  margin: 0 auto;
+  width: 1px;
+  height: 10px;
+  background: #b5c5e3;
+  border-radius: 50%;
+}
+.range-labels-pich .active {
+  color: #136ee5;
+}
+.range-labels-pich .selected::before {
+  background: #136ee5;
+}
+.range-labels-pich .active.selected::before {
+  display: none;
+}
+
+.ttslogun {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  min-height: 615px;
+  width: 70%;
+  float: right;
+  text-align: right;
+}
+
+/* ============================ Right Side bar item =========================== */
+.obodanarea {
+  display: block;
+  /* justify-content: center; */
+  width: 100%;
+  /* flex-direction: row;
+  flex-wrap: wrap; */
+}
+.obodanarea h4 {
+  display: block;
+  float: left;
+  width: 100%;
+  font-size: 18px;
+  color: #526281;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.msinglecard ul {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  line-height: 35px;
+}
+.msinglecard {
+  padding: 5px 0px;
+}
+.msinglecardlast {
+  padding: 4px 20px;
+}
+.msinglecard ul {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  line-height: 35px;
+  padding-left: 0;
+  border: 1px solid #dde4f1;
+  padding: 5px;
+  border-radius: 12px;
+}
+.msinglecardlast ul {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  line-height: 35px;
+  padding-left: 0;
+  /* border: 1px solid #dde4f1; */
+  padding: 5px;
+  border-radius: 12px;
+}
+
+a.countdown {
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+  border: 1px solid #deecfe;
+  padding: 5px 14px;
+  border-radius: 50%;
+  text-align: center;
+  color: #136ee5;
+}
+a.recording {
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+  border: 1px solid #bedaff;
+  padding: 5px 14px;
+  border-radius: 50%;
+  text-align: center;
+  color: #fff;
+  background-color: #bedaff;
+}
+.bottomcontent {
+  display: block;
+  float: left;
+  width: 100%;
+  margin-top: 20px;
+}
+.bottombutton ul {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+.topiconbar {
+  position: relative;
+}
+/* ============================ Right Side bar item =========================== */
+
+/*=============================== Custom progress bar style  design ======================= */
+.footerdownload a img {
+  position: relative;
+}
+.threeplay {
+  position: absolute;
+  top: 50px;
+  float: left;
+  /* width: 100%; */
+  display: block;
+}
+
+.threeplay ul {
+  display: flex;
+  /* justify-content: stretch; */
+}
+
+.threeplay ul li {
+  padding: 0px 37px;
+}
