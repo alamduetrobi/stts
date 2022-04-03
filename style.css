@@ -10,6 +10,7 @@ p.s. I am available for Freelance hire (UI design, web development). mail: mille
  ----------------------------------------------*/
 @import url("https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap");
 @import url("https://fonts.maateen.me/solaiman-lipi/font.css");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@100;400;500;600;700;800;900&display=swap");
 /* @import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap'); */
 
 /*
@@ -17,6 +18,7 @@ p.s. I am available for Freelance hire (UI design, web development). mail: mille
 
 font-family: 'Hind Siliguri', sans-serif;
 font-family: 'SolaimanLipi', Arial, sans-serif !important;
+font-family: 'Noto Sans Bengali', sans-serif;
 
 */
 
@@ -125,7 +127,7 @@ table {
 .allcontent {
   width: 100%;
   float: left;
-  background-color: #f6f9ff;
+  /* background-color: #f6f9ff; */
   /* margin-top: 5%; */
 }
 
@@ -178,6 +180,29 @@ table {
   color: #44c1ea;
 }
 
+.breadcrumbtop {
+  margin-top: 70px;
+  display: block;
+  float: left;
+  width: 100%;
+}
+
+.signupbradcump {
+  margin-top: 70px;
+  display: block;
+  float: left;
+  width: 100%;
+}
+
+.lefttext p {
+  font-size: 20px;
+  color: #171717;
+  font-family: "SolaimanLipi", Arial, sans-serif !important;
+  font-weight: 600;
+  line-height: 40px;
+  /* align-items: flex-end; */
+}
+
 /* --------------------------------------- main-content -------------------------- */
 .main-content {
   display: block;
@@ -206,6 +231,16 @@ table {
   position: absolute; */
 }
 
+.editor-icon {
+  display: flex;
+  width: 100%;
+  float: left;
+  /* background: red; */
+  justify-content: space-between;
+  max-height: 120px;
+  border: none !important;
+}
+
 .iconvoice {
   position: absolute;
   right: 0px;
@@ -220,17 +255,18 @@ p.specific-icon a img {
 }
 
 .editor-icon ul {
-  display: block;
-  /* justify-content: space-between; */
+  display: flex;
+  justify-content: space-between;
   margin-bottom: 0px;
-  justify-content: center;
+  justify-content: left;
   position: relative;
   padding-left: 0px;
+  margin-left: -60px;
 }
 .editor-icon ul li {
   /* padding: 10px 14px; */
   padding: 0px 14px 0px 0px;
-  line-height: 28px;
+  /* line-height: 147px; */
   position: relative;
   display: inline-block;
   float: left;
@@ -331,7 +367,8 @@ span.barside2 a {
 }
 
 .withsidebar-content {
-  background-color: #f6f9ff;
+  /* background-color: #f6f9ff; */
+  background-color: rgba(246, 249, 255, 0.2);
   float: right;
   width: 100%;
   min-height: 55vh;
@@ -341,7 +378,7 @@ span.barside2 a {
   flex-wrap: wrap;
   justify-content: flex-end;
   /* overflow: hidden; */
-  padding: 30px 30px 0px;
+  /* padding: 30px 30px 0px; */
 }
 
 /*================================= Sidebar area ================================ */
@@ -349,10 +386,30 @@ span.barside2 a {
   display: block;
   float: left;
   width: 100%;
-  padding: 20px;
-  background-color: #ffffff;
-  border-radius: 4px;
+  padding: 20px 30px 0px;
+
+  -webkit-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16);
+  border-radius: 24px;
+
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    175deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(252, 249, 249, 1) 100%
+  );
 }
+
+.msinglecard p {
+  color: #171717;
+  font-family: SolaimanLipi;
+  font-size: 16px;
+}
+
+/* .tab-container-one {
+  margin-top: 40px;
+} */
+
 /*================================= Sidebar area ================================ */
 .main-text-content {
   width: 100%;
@@ -365,22 +422,21 @@ span.barside2 a {
   -ms-transition: all 0.3s ease-in;
   -o-transition: all 0.3s ease-in;
   /* margin: 0px 20px 0px 20px; */
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.2);
   overflow: hidden;
-  min-height: 440px;
+  min-height: 560px;
   overflow-y: auto;
-  position: relative;
+  /* position: relative; */
   border-radius: 5px;
   /* padding: 30px; */
 }
 
 .main-text-content p {
-  padding: 15px 30px 0px 30px;
-  font-size: 14px;
+  padding: 15px 0px 0px 10px;
+  font-size: 18px;
   font-family: "SolaimanLipi", Arial, sans-serif !important;
-  color: #707070;
+  color: #303030;
 }
-
 span.textborder {
   border-bottom: 2px solid #e88992;
 }
@@ -1227,7 +1283,19 @@ div#myDIV1 {
 
 /* --------------------------------------- main-content -------------------------- */
 /* --------------------------------------- footer-content -------------------------- */
+
 .footer-area {
+  display: flex;
+  float: left;
+  width: 100%;
+  padding: 20px 30px;
+  position: absolute;
+
+  bottom: 0px;
+  justify-content: space-between;
+}
+
+/* .footer-area {
   display: flex;
   float: left;
   width: 100%;
@@ -1235,8 +1303,16 @@ div#myDIV1 {
   position: absolute;
   left: 10%;
   bottom: 0px;
-  justify-content: space-between;
+  justify-content: flex-start;
+
+} */
+
+.threeplay ul li a.agiyejansunun {
+  margin-left: 140px;
+  /* margin-bottom: 60px; */
+  padding-right: 0px;
 }
+
 ul.footer-item {
   display: flex;
   flex-wrap: wrap;
@@ -1258,11 +1334,16 @@ p.specific-icon {
   display: flex;
   /* float: left; */
   width: 100%;
-  padding: 20px 30px;
+  padding: 0px 0px;
   position: fixed;
-  right: 0px;
+  left: 0px;
   bottom: 0px;
-  justify-content: flex-end;
+  justify-content: space-between;
+  background-color: rgba(255, 255, 255, 0.5);
+  -webkit-box-shadow: -11px 8px 15px -7px #000000;
+  box-shadow: -11px 8px 15px -7px #000000;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 .footer-areabottom ul.footer-item {
   display: flex;
@@ -1276,6 +1357,152 @@ p.specific-icon {
   line-height: 45px;
 }
 
+.developed a {
+  color: #919191;
+  font-size: 16px;
+}
+.reveclass {
+  color: #0c5bc2;
+  font-size: 16px;
+}
+
+.copyclass a {
+  color: #919191;
+  font-size: 16px;
+}
+
+/* ============================================== Signupform  design================================== */
+
+.signupform h4 {
+  font-size: 30px;
+  color: #44af4f;
+  font-family: Noto Sans Bengali;
+}
+.signupform p {
+  font-size: 14px;
+  color: #707070;
+  font-family: Noto Sans Bengali;
+}
+
+.signupform {
+  display: block;
+  float: left;
+  width: 100%;
+  background-color: #fff;
+  border-top: 10px solid #44af4f;
+  border-radius: 52px;
+  padding: 30px;
+}
+.signupformnoborder {
+  display: block;
+  float: left;
+  width: 100%;
+  background-color: #fff;
+  /* border-top: 10px solid #44af4f; */
+  /* border-radius: 52px; */
+  padding: 30px;
+}
+
+.loginform h4 {
+  font-size: 30px;
+  color: #136ee5;
+  font-family: Noto Sans Bengali;
+}
+.loginform p {
+  font-size: 14px;
+  color: #707070;
+  font-family: Noto Sans Bengali;
+}
+
+.loginform {
+  display: block;
+  float: left;
+  width: 100%;
+  background-color: #fff;
+  border-top: 10px solid #116de6;
+  border-radius: 52px;
+  padding: 30px 50px;
+  margin: 0 auto;
+}
+
+h5.mowlictitle {
+  background-color: #f4f4f8;
+  padding: 10px;
+  margin: 20px 0px;
+}
+
+.submitbutton {
+  display: flex;
+  justify-content: flex-end;
+  line-height: 60px;
+}
+
+.loginbutton {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.row.mtopbottom {
+  margin: 10px 0px;
+}
+
+.row.lastbottom {
+  margin: 50px 0px 0px 0px;
+}
+
+.passreset {
+  text-align: right;
+}
+.passreset a {
+  color: #919191;
+}
+
+h5.kenoamerkonto {
+  font-size: 32px;
+  font-family: "Noto Sans Bengali", sans-serif;
+}
+
+/* ============================================== Signupform design================================== */
+
+.ogicarnama {
+  color: #303030;
+  font-size: 22px;
+}
+
+.bodyongicar p {
+  color: #000000;
+  font-size: 16px;
+}
+
+.bodyongicar p {
+  color: #000000;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 25px;
+}
+
+.osomoto {
+  color: #fff;
+  background-color: #ec411b;
+  border: none;
+}
+.akmot {
+  color: #fff;
+  background-color: #44af4f;
+  border-color: #44af4f;
+}
+.chartarea {
+  display: block;
+  float: left;
+  width: 100%;
+}
+.chartarea img {
+  margin-bottom: 100px;
+}
+
+a.bottomwave img {
+  padding-left: 80px;
+}
 /* --------------------------------------- footer-content -------------------------- */
 
 /*=================== Responsive design ========================================= */
@@ -1325,6 +1552,45 @@ p.specific-icon {
     float: left;
     width: 95.8%;
   }
+  .navbar-collapse {
+    flex-basis: 100%;
+    flex-grow: 1;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .signupform {
+    display: block;
+    float: left;
+    width: 100%;
+    background-color: #fff;
+    border-top: 10px solid #44af4f;
+    border-radius: 52px;
+    padding: 30px;
+    margin-bottom: 100px;
+    margin-top: 30px;
+  }
+
+  li a.probeshkorun {
+    color: #136ee5 !important;
+    border: 1px solid #c9ddf8;
+    border-radius: 5px;
+    width: 25%;
+    /* padding: 2px 13px; */
+    text-align: center;
+  }
+
+  .threeplay ul li a.agiyejansunun {
+    margin-left: 0px;
+    /* margin-bottom: 60px; */
+    padding-right: 0px;
+  }
+  .breadcrumbtop {
+    margin-top: 20px;
+    display: block;
+    float: left;
+    width: 100%;
+  }
 }
 
 @media only screen and (max-width: 1367px) and (max-height: 768px) {
@@ -1348,6 +1614,116 @@ p.specific-icon {
     max-height: 590px;
   }
 }
+@media only screen and (max-width: 768px) {
+  .footer-areabottom {
+    display: flex;
+    /* float: left; */
+    width: 100%;
+    padding: 0px 0px;
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    justify-content: space-around;
+    background-color: rgba(255, 255, 255, 0.5);
+    -webkit-box-shadow: -11px 8px 15px -7px #000000;
+    box-shadow: -11px 8px 15px -7px #000000;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #bedaff;
+  }
+  .signupbradcump img {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  .leftwave {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .rightwave {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: rgba(190, 195, 201, 0.1);
+  }
+
+  .wavecontent {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    justify-content: space-between;
+    margin-top: 70px;
+  }
+
+  .lefttext {
+    width: 100%;
+    /* display: flex; */
+    /* flex-direction: row; */
+    text-align: center;
+    /* float: right; */
+    /* justify-content: stretch; */
+    padding-left: 0px;
+  }
+  .righttext {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .righttext p {
+    text-align: left;
+    float: left;
+    padding-right: 0%;
+    padding: 0px 20px;
+  }
+  .chartarea {
+    display: block;
+    float: left;
+    width: 100%;
+    margin-bottom: 100px;
+  }
+
+  .developed a {
+    color: #919191;
+    font-size: 13px;
+  }
+
+  .smdeviceview {
+    max-height: 650px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+  a.bottomwave img {
+    padding-left: 0px;
+  }
+
+  .main-text-content {
+    min-height: 250px;
+  }
+
+  .editor-icon ul {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0px;
+    justify-content: left;
+    position: relative;
+    padding-left: 0px;
+    margin-left: -60px;
+    margin-top: -30px;
+  }
+}
+
+@media only screen and (max-width: 384px) {
+  .submitbutton {
+    display: flex;
+    justify-content: space-around;
+    line-height: 60px;
+  }
+}
+
 @media only screen and (max-width: 768px) and (max-height: 1024px) {
   .editor-icon ul li {
     padding: 0px 10px;

@@ -1,0 +1,288 @@
+/* -------------------------------------------
+
+Name: 		Text to speach
+Version:    1.0
+Author:		Rabiul
+Portfolio:  https://themeforest.net/user/alam_robi
+
+p.s. I am available for Freelance hire (UI design, web development). mail: miller.themes@gmail.com
+
+ ----------------------------------------------*/
+@import url("https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.maateen.me/solaiman-lipi/font.css");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@100;400;500;600;700;800;900&display=swap");
+
+/*
+1. General CSS
+
+font-family: 'Hind Siliguri', sans-serif;
+
+*/
+
+/* body {
+  margin: 0;
+  line-height: 1.5;
+  font-size: 16px;
+  height: auto;
+  font-family: "Hind Siliguri", sans-serif;
+  background-color: #eff3f8;
+} */
+
+/* ============================================
+1. General CSS
+=============================================== */
+:root {
+  --main-color: #e98b2c;
+  --dark: #1b1b22;
+  --dark-light: #32323a;
+  --white: #fff;
+  --white-light: #c8c8c8;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+::before,
+::after {
+  box-sizing: border-box;
+}
+/* img{
+      width: 100%;
+  } */
+
+body {
+  margin: 0;
+  line-height: 1.5;
+  font-size: 16px;
+  height: auto;
+  font-family: "Hind Siliguri", sans-serif;
+}
+
+/* For scripting */
+
+body.hide-scrolling {
+  overflow-y: hidden;
+}
+
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.section {
+  min-height: 100vh;
+  display: block;
+  width: 100%;
+}
+
+.shadow-dark2 {
+  -webkit-box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
+  box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
+}
+
+.shadow-dark {
+  /* 
+    -webkit-box-shadow: 0 0 20px rgba(48,46,77,0.15);
+    box-shadow: 0 0 20px rgba(48,46,77,0.15); */
+
+  /* -webkit-box-shadow: 0 0 20px rgba(0,0,0,0.15);
+    box-shadow: 0 0 20px rgba(0,0,0,0.15); */
+  /* 
+    box-shadow: 2px -4px 8px -3px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 2px -4px 8px -3px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px -4px 8px -3px rgba(0,0,0,0.75); */
+
+  /* box-shadow: -2px -1px 24px -16px rgba(0,0,0,0.72) inset;
+    -webkit-box-shadow: -2px -1px 24px -16px rgba(0,0,0,0.72) inset;
+    -moz-box-shadow: -2px -1px 24px -16px rgba(0,0,0,0.72) inset; */
+  box-shadow: -2px -1px 25px -16px rgba(0, 0, 0, 0.72) inset;
+  -webkit-box-shadow: -2px -1px 25px -16px rgba(0, 0, 0, 0.72) inset;
+  -moz-box-shadow: -2px -1px 25px -16px rgba(0, 0, 0, 0.72) inset;
+}
+
+.margin-bottom {
+  margin-bottom: 60px;
+}
+
+/* .tab-container-one {
+  margin-top: 10%;
+} */
+
+/*=============================== Content area design ======================= */
+.bodybg {
+  /* display: flex; */
+  display: block;
+  height: 140vh;
+  /* background: url("../img/bg.png") no-repeat center; */
+  background: url("../../images/stts/homebg2.png") no-repeat center;
+  background-size: cover;
+  background-position: 100% 65%;
+  flex-wrap: wrap;
+  /* width: 100%; */
+  width: 100%;
+  float: left;
+  position: relative;
+  /* padding: 137px 0px 0px 0px; */
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  /* overflow: hidden; */
+}
+
+.bodytext {
+  background-color: rgba(246, 249, 255, 0.5);
+  padding: 20px;
+  border-radius: 5px;
+  position: relative;
+}
+/* ============================= Menu Start Here ======================= */
+
+.topmenu {
+  width: 100%;
+  float: left;
+  display: block;
+  /* background: red; */
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #fff;
+}
+
+li a.probeshkorun {
+  color: #136ee5 !important;
+  border: 1px solid #c9ddf8;
+  border-radius: 5px;
+}
+
+li a.nibondonkorun {
+  color: #44af4f !important;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #161a31;
+}
+
+.obodanitem li {
+  margin: 0px 30px;
+}
+
+.noactive.active {
+  background-color: transparent !important;
+  border: none;
+}
+
+ul.porarniyom {
+  display: block;
+  float: right;
+  text-align: right;
+}
+
+/* ============================= Menu Start Here ======================= */
+
+.wavecontent {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: auto;
+  justify-content: space-between;
+  /* position: absolute; */
+  /* top: 5%; */
+  margin-top: 70px;
+}
+.leftwave {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+a.rightwaveig img {
+  margin-top: 24px;
+}
+
+.rightwave {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: rgba(190, 195, 201, 0.1);
+}
+
+.middletextarea {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 100%;
+  flex-wrap: wrap;
+  height: auto;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 80px 0px;
+}
+
+.righttext p {
+  color: #171717;
+  font-size: 16px;
+  font-family: "SolaimanLipi";
+}
+
+.lefttext {
+  width: 50%;
+  /* display: flex; */
+  /* flex-direction: row; */
+  text-align: justify;
+  float: right;
+  /* justify-content: stretch; */
+  padding-left: 360px;
+}
+
+.righttext {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.righttext p {
+  text-align: left;
+  float: left;
+  padding-right: 50%;
+}
+
+/*=============================== Content area design ======================= */
+/*=============================== Custom progress bar style  design ======================= */
+
+/* ============================ Right Side bar item =========================== */
+
+/*=============================== Custom progress bar style  design ======================= */
+.footerdownload a img {
+  position: relative;
+}
+.threeplay {
+  position: absolute;
+  top: 50px;
+  float: left;
+  /* width: 100%; */
+  display: block;
+}
+
+.threeplay ul {
+  display: flex;
+  /* justify-content: stretch; */
+}
+
+.threeplay ul li {
+  padding: 0px 37px;
+}

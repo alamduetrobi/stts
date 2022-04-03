@@ -16,6 +16,9 @@ p.s. I am available for Freelance hire (UI design, web development). mail: mille
 1. General CSS
 
 font-family: 'Hind Siliguri', sans-serif;
+font-family: 'SolaimanLipi', Arial, sans-serif !important;
+font-family: 'Noto Sans Bengali', sans-serif;
+
 
 */
 
@@ -118,9 +121,9 @@ table {
   margin-bottom: 60px;
 }
 
-.tab-container-one {
+/* .tab-container-one {
   margin-top: 10%;
-}
+} */
 
 /*=============================== Content area design ======================= */
 
@@ -128,7 +131,85 @@ table {
   display: flex;
   height: 100vh;
   /* background: url("../img/bg.png") no-repeat center; */
-  background: url("../../images/stts/sttbg.png") no-repeat center;
+  background: url("../../images/stts/pageone.png") no-repeat center;
+  background-size: cover;
+  background-position: 100% 65%;
+  flex-wrap: wrap;
+  /* width: 100%; */
+  width: 100%;
+  float: left;
+  position: relative;
+  /* padding: 137px 0px 0px 0px; */
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  /* overflow: hidden; */
+}
+
+.aboutbody {
+  display: flex;
+  height: 80vh;
+  /* background: url("../img/bg.png") no-repeat center; */
+  background: url("../../images/stts/sununbolun.png") no-repeat center;
+  background-size: cover;
+  background-position: 100% 65%;
+  flex-wrap: wrap;
+  /* width: 100%; */
+  width: 100%;
+  float: left;
+  position: relative;
+  /* padding: 137px 0px 0px 0px; */
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.signupbg {
+  display: flex;
+  height: 130vh;
+  /* background: url("../img/bg.png") no-repeat center; */
+  background: url("../../images/stts/sighupbg.png") no-repeat center;
+  background-size: cover;
+  background-position: 40% 65%;
+  flex-wrap: wrap;
+  /* width: 100%; */
+  width: 100%;
+  float: left;
+  position: relative;
+  /* padding: 137px 0px 0px 0px; */
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 5%;
+  /* overflow-y: scroll; */
+}
+
+.loginbg {
+  display: flex;
+  height: 90vh;
+  /* background: url("../img/bg.png") no-repeat center; */
+  background: url("../../images/stts/sighupbg.png") no-repeat center;
+  background-size: cover;
+  background-position: 40% 65%;
+  flex-wrap: wrap;
+  /* width: 100%; */
+  width: 100%;
+  float: left;
+  position: relative;
+  /* padding: 137px 0px 0px 0px; */
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 5%;
+  /* overflow-y: scroll; */
+}
+
+.bodybgmicrophone {
+  display: flex;
+  height: 100vh;
+  /* background: url("../img/bg.png") no-repeat center; */
+  background: url("../../images/stts/pageone.png") no-repeat center;
   background-size: cover;
   background-position: 100% 65%;
   flex-wrap: wrap;
@@ -318,9 +399,16 @@ table {
   display: block;
   /* justify-content: center; */
   width: 100%;
-  /* flex-direction: row;
-  flex-wrap: wrap; */
+  min-height: 575px;
 }
+
+.obodanareaonly {
+  display: block;
+  /* justify-content: center; */
+  width: 100%;
+  min-height: 400px;
+}
+
 .obodanarea h4 {
   display: block;
   float: left;
@@ -353,15 +441,41 @@ table {
   padding: 5px;
   border-radius: 12px;
 }
+
 .msinglecardlast ul {
   display: flex;
   justify-content: flex-end;
+  width: 100%;
+  line-height: 0px;
+  padding-left: 0;
+  /* border: 1px solid #dde4f1; */
+  padding: 5px;
+  border-radius: 12px;
+  margin-bottom: 0px;
+}
+
+.selectoption ul {
+  display: flex;
+  justify-content: center;
   width: 100%;
   line-height: 35px;
   padding-left: 0;
   /* border: 1px solid #dde4f1; */
   padding: 5px;
   border-radius: 12px;
+}
+
+.selectoption ul li {
+  width: 100%;
+  float: left;
+  text-align: left;
+}
+
+.selectoption ul li label {
+  font-size: 22px;
+  color: #136ee5;
+  font-weight: 500;
+  font-family: "Noto Sans Bengali", sans-serif;
 }
 
 a.countdown {
@@ -374,16 +488,42 @@ a.countdown {
   text-align: center;
   color: #136ee5;
 }
+
 a.recording {
   width: 36px;
   height: 36px;
   line-height: 36px;
   border: 1px solid #bedaff;
-  padding: 5px 14px;
+  padding: 5px 15px;
   border-radius: 50%;
   text-align: center;
   color: #fff;
   background-color: #bedaff;
+}
+a.recordingprofile {
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+  border: 1px solid #bedaff;
+  padding: 5px 15px;
+  border-radius: 50%;
+  text-align: center;
+  color: #fff;
+  background-color: #bedaff;
+  margin-left: 60px;
+}
+
+a.profilerec {
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+  border: 1px solid #bedaff;
+  padding: 5px 15px;
+  border-radius: 50%;
+  text-align: center;
+  color: #fff;
+  background-color: #bedaff;
+  /* margin-left: 60px; */
 }
 .bottomcontent {
   display: block;
