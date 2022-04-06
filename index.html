@@ -21,7 +21,7 @@
         <nav class="navbar navbar-expand-lg navbar-light">
           <div class="container-fluid">
             <button
-              class="navbar-toggler"
+              class="navbar-toggler noborder"
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#navbarTogglerDemo01"
@@ -29,46 +29,54 @@
               aria-expanded="false"
               aria-label="Toggle navigation"
             >
-              <span class="navbar-toggler-icon"></span>
+              <div class="hambergermenu">
+                <span class="navbar-toggler-icon"></span>
+                <span
+                  ><a class="navbar-brand" href="#"
+                    ><img src="images/stts/homelogo.png" alt="Logo" /></a
+                ></span>
+              </div>
             </button>
             <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-              <a class="navbar-brand" href="#"
+              <a class="navbar-brand mnoview" href="#"
                 ><img src="images/stts/homelogo.png" alt="Logo"
               /></a>
 
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0 obodanitem">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#"
-                    >অবদান</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">তথ্যশালা</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">সম্পর্কিত</a>
-                </li>
-              </ul>
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#"
-                    ><img src="images/stts/playstop.png" alt=""
-                  /></a>
-                </li>
-              </ul>
-              <ul class="navbar-nav me-0 mb-2 mb-lg-0">
-                <li class="nav-item me-3">
-                  <a
-                    class="nav-link active probeshkorun"
-                    aria-current="page"
-                    href="#"
-                    >প্রবেশ করুন</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link nibondonkorun" href="#">নিবন্ধন করুন</a>
-                </li>
-              </ul>
+              <div class="mobileview">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 obodanitem">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#"
+                      >অবদান</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">তথ্যশালা</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">সম্পর্কিত</a>
+                  </li>
+                </ul>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 mnoview">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#"
+                      ><img src="images/stts/playstop.png" alt=""
+                    /></a>
+                  </li>
+                </ul>
+                <ul class="navbar-nav me-0 mb-2 mb-lg-0">
+                  <li class="nav-item me-lg-3 mb-xs-5 mb-sm-3 mb-md-0">
+                    <a
+                      class="nav-link active probeshkorun"
+                      aria-current="page"
+                      href="#"
+                      >প্রবেশ করুন</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link nibondonkorun" href="#">নিবন্ধন করুন</a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </nav>
@@ -138,7 +146,7 @@
                   <div
                     class="bodytext col-12 col-sm-12 col-md-6 col-lg-9 col-xl-9 col-xxl-9"
                   >
-                    <h6>
+                    <h6 class="porerager">
                       পড়া শুরুর আগে
                       <span
                         ><a href="#">
@@ -333,7 +341,7 @@
                   </div>
                   <div class="row">
                     <div class="col-md-9 bodytext">
-                      <h6>
+                      <h6 class="porersunte">
                         পড়া শুনতে
                         <span
                           ><a href="#">
@@ -505,7 +513,7 @@
 
               <form action="">
                 <div class="row mtopbottom">
-                  <div class="col">
+                  <div class="col-12 col-sm-6">
                     <label for="formGroupExampleInput" class="form-label"
                       >নামের প্রথম অংশ</label
                     >
@@ -516,7 +524,7 @@
                       aria-label="First name"
                     />
                   </div>
-                  <div class="col">
+                  <div class="col-12 col-sm-6">
                     <label for="formGroupExampleInput" class="form-label"
                       >ব্যবহারকারীর নাম ( ই-মেইল/ ফোন/ এনআইডি )*</label
                     >
@@ -529,7 +537,7 @@
                   </div>
                 </div>
                 <div class="row mtopbottom">
-                  <div class="col">
+                  <div class="col-12 col-sm-6">
                     <label for="formGroupExampleInput" class="form-label"
                       >নামের শেষাংশ</label
                     >
@@ -540,7 +548,7 @@
                       aria-label="First name"
                     />
                   </div>
-                  <div class="col">
+                  <div class="col-12 col-sm-6">
                     <label for="formGroupExampleInput" class="form-label"
                       >ফোন</label
                     >
@@ -553,7 +561,7 @@
                   </div>
                 </div>
                 <div class="row mtopbottom">
-                  <div class="col">
+                  <div class="col-12 col-sm-6">
                     <label for="formGroupExampleInput" class="form-label"
                       >ই-মেইল</label
                     >
@@ -564,7 +572,7 @@
                       aria-label="First name"
                     />
                   </div>
-                  <div class="col">
+                  <div class="col-12 col-sm-6">
                     <label for="formGroupExampleInput" class="form-label"
                       >লিঙ্গ</label
                     >
@@ -578,7 +586,7 @@
                   </div>
                 </div>
                 <div class="row mtopbottom">
-                  <div class="col">
+                  <div class="col-12 col-sm-6">
                     <label for="formGroupExampleInput" class="form-label"
                       >এনআইডি</label
                     >
@@ -589,12 +597,12 @@
                       aria-label="First name"
                     />
                   </div>
-                  <div class="col"></div>
+                  <div class="col-12 col-sm-6"></div>
                 </div>
                 <h5 class="mowlictitle">স্পিকার প্রোফাইল</h5>
 
                 <div class="row mtopbottom">
-                  <div class="col">
+                  <div class="col-12 col-sm-12">
                     <label for="formGroupExampleInput" class="form-label"
                       >এলাকা (২-১৫ বছর ধরে ছিল)</label
                     >
@@ -606,7 +614,7 @@
                       <option>...</option>
                     </select>
                   </div>
-                  <div class="col">
+                  <div class="col-12 col-sm-6">
                     <label for="formGroupExampleInput" class="form-label"
                       >তোতলা অবস্থা</label
                     >
@@ -620,7 +628,7 @@
                   </div>
                 </div>
                 <div class="row mtopbottom">
-                  <div class="col">
+                  <div class="col-12 col-sm-6">
                     <label for="formGroupExampleInput" class="form-label"
                       >পেশা</label
                     >
@@ -632,7 +640,7 @@
                       <option>...</option>
                     </select>
                   </div>
-                  <div class="col">
+                  <div class="col-12 col-sm-6">
                     <label for="formGroupExampleInput" class="form-label"
                       >শুনানির অবস্থা</label
                     >
@@ -646,7 +654,7 @@
                   </div>
                 </div>
                 <div class="row mtopbottom">
-                  <div class="col">
+                  <div class="col-12 col-sm-6">
                     <label for="formGroupExampleInput" class="form-label"
                       >অর্থনৈতিক অবস্থা</label
                     >
@@ -658,7 +666,7 @@
                       <option>...</option>
                     </select>
                   </div>
-                  <div class="col">
+                  <div class="col-12 col-sm-6">
                     <label for="formGroupExampleInput" class="form-label"
                       >বর্তমান ঠিকানা</label
                     >
@@ -671,7 +679,7 @@
                   </div>
                 </div>
                 <div class="row mtopbottom">
-                  <div class="col">
+                  <div class="col-12 col-sm-6">
                     <label for="formGroupExampleInput" class="form-label"
                       >জন্ম তারিখ</label
                     >
@@ -682,7 +690,7 @@
                       aria-label="First name"
                     />
                   </div>
-                  <div class="col">
+                  <div class="col-12 col-sm-6">
                     <label for="formGroupExampleInput" class="form-label"
                       >স্থায়ী ঠিকানা</label
                     >
@@ -695,7 +703,7 @@
                   </div>
                 </div>
                 <div class="row mtopbottom">
-                  <div class="col">
+                  <div class="col-12 col-sm-6">
                     <label for="formGroupExampleInput" class="form-label"
                       >শিক্ষার স্তর</label
                     >
@@ -707,10 +715,10 @@
                       <option>...</option>
                     </select>
                   </div>
-                  <div class="col"></div>
+                  <div class="col-12 col-sm-6"></div>
                 </div>
                 <div class="row mtopbottom lastbottom">
-                  <div class="col">
+                  <div class="col-12 col-sm-12">
                     <div class="form-check">
                       <input
                         class="form-check-input"

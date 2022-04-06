@@ -207,7 +207,7 @@ table {
 
 .bodybgmicrophone {
   display: flex;
-  height: 100vh;
+  height: 95vh;
   /* background: url("../img/bg.png") no-repeat center; */
   background: url("../../images/stts/pageone.png") no-repeat center;
   background-size: cover;
@@ -400,6 +400,13 @@ table {
   /* justify-content: center; */
   width: 100%;
   min-height: 575px;
+}
+
+.obodanarea {
+  display: block;
+  /* justify-content: center; */
+  width: 100%;
+  min-height: 545px;
 }
 
 .obodanareaonly {

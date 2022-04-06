@@ -20,7 +20,7 @@
         <nav class="navbar navbar-expand-lg navbar-light">
           <div class="container-fluid">
             <button
-              class="navbar-toggler"
+              class="navbar-toggler noborder"
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#navbarTogglerDemo01"
@@ -28,46 +28,54 @@
               aria-expanded="false"
               aria-label="Toggle navigation"
             >
-              <span class="navbar-toggler-icon"></span>
+              <div class="hambergermenu">
+                <span class="navbar-toggler-icon"></span>
+                <span
+                  ><a class="navbar-brand" href="#"
+                    ><img src="images/stts/homelogo.png" alt="Logo" /></a
+                ></span>
+              </div>
             </button>
             <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-              <a class="navbar-brand" href="#"
+              <a class="navbar-brand mnoview" href="#"
                 ><img src="images/stts/homelogo.png" alt="Logo"
               /></a>
 
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0 obodanitem">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#"
-                    >অবদান</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">তথ্যশালা</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">সম্পর্কিত</a>
-                </li>
-              </ul>
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#"
-                    ><img src="images/stts/playstop.png" alt=""
-                  /></a>
-                </li>
-              </ul>
-              <ul class="navbar-nav me-0 mb-2 mb-lg-0">
-                <li class="nav-item me-3">
-                  <a
-                    class="nav-link active probeshkorun"
-                    aria-current="page"
-                    href="#"
-                    >প্রবেশ করুন</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link nibondonkorun" href="#">নিবন্ধন করুন</a>
-                </li>
-              </ul>
+              <div class="mobileview">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 obodanitem">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#"
+                      >অবদান</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">তথ্যশালা</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">সম্পর্কিত</a>
+                  </li>
+                </ul>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 mnoview">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#"
+                      ><img src="images/stts/playstop.png" alt=""
+                    /></a>
+                  </li>
+                </ul>
+                <ul class="navbar-nav me-0 mb-2 mb-lg-0">
+                  <li class="nav-item me-lg-3 mb-xs-5 mb-sm-3 mb-md-0">
+                    <a
+                      class="nav-link active probeshkorun"
+                      aria-current="page"
+                      href="#"
+                      >প্রবেশ করুন</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link nibondonkorun" href="#">নিবন্ধন করুন</a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </nav>
@@ -99,9 +107,10 @@
     <div class="middletextarea">
       <div class="lefttext">
         <p>
-          Mozilla Common Voice হল একটি <br />
-          উদ্যোগ যা মেশিনকে প্রকৃত মানুষ কিভাবে কথা <br />
-          বলে তা শেখাতে সাহায্য করে।
+          বাংলা ভাষী মানুষের কথা ও তা বলার রীতি <br />
+          সংগ্রহ করে মেশিনকে সেটা শেখানোর উদ্দেশ্যেই <br />
+          <span class="amer">"আমার</span>
+          <span class="kontho">কন্ঠ"</span>প্লাটফর্ম।
         </p>
       </div>
       <div class="righttext">

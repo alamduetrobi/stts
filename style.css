@@ -181,7 +181,7 @@ table {
 }
 
 .breadcrumbtop {
-  margin-top: 70px;
+  margin-top: 90px;
   display: block;
   float: left;
   width: 100%;
@@ -195,12 +195,31 @@ table {
 }
 
 .lefttext p {
-  font-size: 20px;
+  font-size: 26px;
   color: #171717;
   font-family: "SolaimanLipi", Arial, sans-serif !important;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 40px;
   /* align-items: flex-end; */
+}
+
+span.amer {
+  color: #059514;
+  font-weight: 700;
+  font-family: "Noto Sans Bengali", sans-serif;
+}
+span.kontho {
+  color: #ec411b;
+  font-weight: 700;
+  font-family: "Noto Sans Bengali", sans-serif;
+}
+
+button.noborder {
+  border: none;
+}
+
+.noborder:focus {
+  box-shadow: none;
 }
 
 /* --------------------------------------- main-content -------------------------- */
@@ -382,22 +401,17 @@ span.barside2 a {
 }
 
 /*================================= Sidebar area ================================ */
+
 .rightsidebar {
   display: block;
   float: left;
   width: 100%;
   padding: 20px 30px 0px;
-
   -webkit-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16);
   box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16);
-  border-radius: 24px;
-
+  border-radius: 4px;
   background: rgb(255, 255, 255);
-  background: linear-gradient(
-    175deg,
-    rgba(255, 255, 255, 1) 0%,
-    rgba(252, 249, 249, 1) 100%
-  );
+  background: #f6f9ff;
 }
 
 .msinglecard p {
@@ -424,11 +438,12 @@ span.barside2 a {
   /* margin: 0px 20px 0px 20px; */
   background-color: rgba(255, 255, 255, 0.2);
   overflow: hidden;
-  min-height: 560px;
+  min-height: 410px;
   overflow-y: auto;
   /* position: relative; */
   border-radius: 5px;
   /* padding: 30px; */
+  background: url(../../images/stts/mike1.png) no-repeat center center;
 }
 
 .main-text-content p {
@@ -1279,6 +1294,19 @@ div#myDIV1 {
   border-left: 1px solid #fff;
 }
 
+.mobileview {
+  display: flex;
+  width: 100%;
+}
+
+.ongicernama {
+  margin-top: 25px;
+}
+
+span.mostrequired {
+  color: #ec411b;
+}
+
 /* ====================================== Progress Bar Design================================== */
 
 /* --------------------------------------- main-content -------------------------- */
@@ -1290,11 +1318,9 @@ div#myDIV1 {
   width: 100%;
   padding: 20px 30px;
   position: absolute;
-
-  bottom: 0px;
+  bottom: -80px;
   justify-content: space-between;
 }
-
 /* .footer-area {
   display: flex;
   float: left;
@@ -1392,6 +1418,7 @@ p.specific-icon {
   border-top: 10px solid #44af4f;
   border-radius: 52px;
   padding: 30px;
+  margin-bottom: 100px;
 }
 .signupformnoborder {
   display: block;
@@ -1460,6 +1487,24 @@ h5.mowlictitle {
 h5.kenoamerkonto {
   font-size: 32px;
   font-family: "Noto Sans Bengali", sans-serif;
+}
+
+li.nav-item > a.nav-link {
+  font-size: 20px;
+  color: #161a31;
+  font-family: "Noto Sans Bengali", sans-serif;
+  font-weight: 500;
+}
+
+span.navbar-toggler-icon {
+  margin-right: 20px;
+}
+
+h6.porerager {
+  text-align: center;
+}
+h6.porersunte {
+  text-align: center;
 }
 
 /* ============================================== Signupform design================================== */
@@ -1546,6 +1591,29 @@ a.bottomwave img {
   } */
 }
 
+@media only screen and (max-width: 1366px) {
+  .lefttext {
+    width: 100%;
+    /* display: flex; */
+    /* flex-direction: row; */
+    text-align: center;
+    /* float: right; */
+    /* justify-content: stretch; */
+    padding-left: 0px;
+  }
+  .righttext {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .righttext p {
+    text-align: left;
+    float: left;
+    padding-right: 0%;
+    padding: 0px 20px;
+  }
+}
+
 @media only screen and (max-width: 1024px) {
   .main-content {
     display: block;
@@ -1571,25 +1639,69 @@ a.bottomwave img {
     margin-top: 30px;
   }
 
-  li a.probeshkorun {
-    color: #136ee5 !important;
-    border: 1px solid #c9ddf8;
-    border-radius: 5px;
-    width: 25%;
-    /* padding: 2px 13px; */
-    text-align: center;
-  }
-
   .threeplay ul li a.agiyejansunun {
     margin-left: 0px;
     /* margin-bottom: 60px; */
     padding-right: 0px;
   }
+
   .breadcrumbtop {
-    margin-top: 20px;
+    margin: 30px 0px;
     display: block;
     float: left;
     width: 100%;
+    text-align: center;
+  }
+  .signupbradcump {
+    margin: 30px 0px;
+    display: block;
+    float: left;
+    width: 100%;
+    text-align: center;
+  }
+
+  .loginform {
+    display: block;
+    float: left;
+    width: 100%;
+    background-color: transparent;
+    border-top: none;
+    border-radius: 0;
+    padding: 30px 50px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+  }
+  .signupform {
+    display: block;
+    float: left;
+    width: 100%;
+    background-color: transparent;
+    border-top: none;
+    border-radius: 0;
+    padding: 30px 50px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+  }
+
+  .lefttext {
+    width: 100%;
+    /* display: flex; */
+    /* flex-direction: row; */
+    text-align: center;
+    /* float: right; */
+    /* justify-content: stretch; */
+    padding-left: 0px;
+  }
+  .righttext {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .righttext p {
+    text-align: left;
+    float: left;
+    padding-right: 0%;
+    padding: 0px 20px;
   }
 }
 
@@ -1614,6 +1726,20 @@ a.bottomwave img {
     max-height: 590px;
   }
 }
+
+@media only screen and (max-width: 991px) {
+  .bodybgmicrophone .topmenu {
+    width: 100%;
+    float: left;
+    display: block;
+    /* background: red; */
+    position: inherit;
+    top: 0;
+    left: 0;
+    background: #fff;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .footer-areabottom {
     display: flex;
@@ -1623,14 +1749,24 @@ a.bottomwave img {
     position: fixed;
     left: 0px;
     bottom: 0px;
-    justify-content: space-around;
+    justify-content: center;
     background-color: rgba(255, 255, 255, 0.5);
-    -webkit-box-shadow: -11px 8px 15px -7px #000000;
-    box-shadow: -11px 8px 15px -7px #000000;
+
+    -webkit-box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.16);
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.16);
+
     flex-direction: row;
     flex-wrap: wrap;
-    background-color: #bedaff;
+    /* background-color: #bedaff; */
   }
+
+  .developed:first-child {
+    display: none;
+  }
+  ul.footer-item:last-child {
+    display: none;
+  }
+
   .signupbradcump img {
     width: 100%;
     margin-bottom: 50px;
@@ -1704,6 +1840,17 @@ a.bottomwave img {
     min-height: 250px;
   }
 
+  .editor-icon {
+    display: flex;
+    width: 100%;
+    float: left;
+    /* background: red; */
+    justify-content: space-between;
+    max-height: 120px;
+    border: none !important;
+    margin-bottom: 30px;
+  }
+
   .editor-icon ul {
     display: flex;
     justify-content: space-between;
@@ -1712,7 +1859,88 @@ a.bottomwave img {
     position: relative;
     padding-left: 0px;
     margin-left: -60px;
-    margin-top: -30px;
+    /* margin-top: -30px; */
+    flex-direction: row;
+    justify-content: space-between;
+    flex-flow: row;
+  }
+  h6.porerager {
+    font-size: 10px;
+  }
+  h6.porersunte {
+    font-size: 10px;
+  }
+
+  .threeplay {
+    position: absolute;
+    top: 45px;
+    float: left;
+    /* width: 100%; */
+    display: block;
+    left: 48px;
+  }
+  .iconvoice {
+    position: absolute;
+    right: 0px;
+    top: -40px;
+  }
+  a.recordingprofile {
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    border: 1px solid #bedaff;
+    padding: 5px 15px;
+    border-radius: 50%;
+    text-align: center;
+    color: #fff;
+    background-color: #bedaff;
+    margin-left: 135px;
+  }
+
+  li a.probeshkorun {
+    /* color: #136ee5 !important;
+    border: 1px solid #c9ddf8;
+    border-radius: 5px; */
+    /* width: 25%; */
+    /* padding: 2px 13px; */
+    /* text-align: center;
+    font-size: 12px;
+    margin-bottom: 10px; */
+  }
+  .probeshkorun {
+    margin-bottom: 20px;
+  }
+
+  #navbarTogglerDemo01 {
+    background-color: rgba(0, 0, 0, 0.41);
+    height: 100vh;
+  }
+
+  .mobileview {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #ffff;
+  }
+  .mnoview {
+    display: none;
+  }
+  .rightsidebar {
+    display: block;
+    float: left;
+    width: 100%;
+    padding: 20px 30px 0px;
+    -webkit-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16);
+    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16);
+    border-radius: 4px;
+    background: rgb(255, 255, 255);
+    background: #f6f9ff;
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+
+  .loginlogo img {
+    width: 20%;
   }
 }
 

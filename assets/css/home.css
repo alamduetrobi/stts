@@ -144,10 +144,11 @@ table {
 }
 
 .bodytext {
-  background-color: rgba(246, 249, 255, 0.5);
+  background-color: #f6f9ff;
   padding: 20px;
   border-radius: 5px;
   position: relative;
+  max-height: 565px;
 }
 /* ============================= Menu Start Here ======================= */
 
@@ -162,7 +163,7 @@ table {
   background: #fff;
 }
 
-li a.probeshkorun {
+a.probeshkorun {
   color: #136ee5 !important;
   border: 1px solid #c9ddf8;
   border-radius: 5px;
@@ -170,6 +171,8 @@ li a.probeshkorun {
 
 li a.nibondonkorun {
   color: #44af4f !important;
+  border: 1px solid #44af4f;
+  border-radius: 5px;
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -246,7 +249,8 @@ a.rightwaveig img {
   text-align: justify;
   float: right;
   /* justify-content: stretch; */
-  padding-left: 360px;
+  padding-left: 310px;
+  /* padding-right: 20px; */
 }
 
 .righttext {
